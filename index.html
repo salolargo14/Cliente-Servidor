@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">    
+    
+    <title>Pagina Web Cliente Servidor</title>
+</head>
+<body>  
+
+    <div class="head">
+
+        <div class = "logo">
+            <a href="#">logo</a>
+        </div>
+
+        <nav class = "navbar">
+            <a href="#">Introducción</a>
+            <a href="#">Tipos de arquitecturas</a>
+            <a href="#">Ventajas y Desventajas</a>
+            <a href="#">Ejemplos</a>
+            <a href="#">Conclusion</a>
+        </nav>
+
+    </div>
+
+    <header class = "content header">
+        <h2 class = "title">Introducción</h2>
+        <p class = "description">La arquitectura cliente-servidor es una de las arquitecturas más comunes en el desarrollo de software. 
+            En esta arquitectura, los clientes son los dispositivos que solicitan servicios y los servidores son los dispositivos que proporcionan esos servicios. 
+            Esta arquitectura permite la distribución de tareas y recursos, lo que mejora la eficiencia y escalabilidad de las aplicaciones.</p>
+        <p class = "description">La arquitectura cliente-servidor se basa en la comunicación entre los clientes y los servidores a través de una red. 
+            Los clientes envían solicitudes a los servidores, que procesan esas solicitudes y devuelven respuestas. 
+            Esta comunicación puede ser síncrona o asíncrona, dependiendo de la naturaleza de la aplicación y de los requisitos del sistema.</p>
+        
+        
+        <div class = "btn-home">
+            <a href="#" class = "btn">Conoce más</a>
+
+        </div>
+
+    </header>
+    
+    <section class = "content">
+        <h2 class = "title">Tipos de arquitecturas</h2>
+        <h3 class = "title">Arquitectura de dos niveles (2-Tier)</h3>
+        
+        <p class = "description">El sistema de computación se dividen en dos niveles: el nivel cliente y el nivel servidor. </p>
+            
+         <p class = "description">  Nivel cliente: Este nivel abarca la interfaz de usuario o la aplicación del lado del cliente, responsable de recopilar las entradas de los usuarios, procesarlas y enviar solicitudes al servidor.
+             Nivel Servidor: El nivel servidor alberga la aplicación del lado del servidor, que cumple con las solicitudes del cliente, proceda los datos y envía los resultados al cliente. </p>
+            
+        <p class = "description">La arquitectura de dos niveles es un modelo de software que se utiliza para desarrollar aplicaciones distribuidas.
+            En este modelo, la aplicación se divide en dos capas: la capa de presentación y la capa de datos. La capa de presentación es responsable de la interfaz de usuario y la capa de datos es responsable del almacenamiento y recuperación de datos.
+            Los beneficios que brinda este modelo son los siguientes:
+            Simplicidad,
+            Eficiencia,
+            Escalabilidad,
+            Mantenimiento,
+        </p>
+
+        <p class = "description">    Consideraciones de seguridad: 
+            Protocolos de seguridad,
+            Control de Acceso,
+            Actualizaciones regulares,
+        </p>
+
+        <h3 class = "title">Arquitectura de tres niveles (3-Tier)</h3>
+         
+
+         <p class = "description">   Está arquitectura es un patrón de diseño de software que ofrece un enfoque estructurado para organizar y desarrollar aplicaciones web. 
+            Estas tres capas son: la capa de presentación, la capa de lógica de negocios y la capa de almacenamiento de datos. </p>
+            
+         <p class = "description">   Comprensión de los Componentes:
+            La capa de presentación: La capa de presentación es responsable de interactuar con el usuario de manera directa. Incluye los componentes de la interfaz de usuario que muestran información y recopilan entradas del usuario.
+            Capa de lógica de negocios: Está capa funciona como la capa intermedia en la arquitectura de 3 capas. Contiene la lógica de la aplicación y las reglas que gobiernan el comportamiento de la aplicación web.
+            Capa de almacenamiento de datos: La capa de almacenamiento de datos, también conocida como la capa de persistencia, gestiona el almacenamiento y la recuperación de datos de la base datos. Tiene tareas como crear, actualizar, eliminar y consultar datos.    
+            Beneficios clave de la arquitectura de 3 capas:
+            Modularidad,
+            Escalabilidad, 
+            Flexibilidad,
+            <ipsum></ipsum></p>
+    
+    </section>
+
+    <div class = "box-container">
+
+        <div class = "box">
+            <i class = "fa fa angular"></i>
+            <h3>Arquitectura de dos niveles (2-Tier)</h3>
+        
+        </div>
+
+        <div class = "box">
+            <i class = "fa fa apple"></i>
+            <h3>Arquitectura de tres niveles (3-tier)</h3>
+            
+        </div>
+        
+    
+
+
+    <section class = "content about">
+
+        <h2 class = "title">Ventajas y Desventajas</h2>
+        <h3 class = "title">Ventajas</h3>
+        <p class = "description">Administración centrada en el servidor:
+            Los clientes tienen poca transcendencia en el esquema y sus necesidades de administración a menores.
+        </p>
+        <p class="description"> Centralización de los recursos: Los recursos comunes a todos los usuarios se administran en el servidor. 
+            Así se evitan situaciones como redundancia o inconsistencia de información en las bases de datos.
+        </p>
+        <p class="description">Mejora de la seguridad: 
+            Al disponer de un mecanismo central de autenticación, las posibilidades de acceso indebido se reducen considerablemente.</p>
+        <p class="description">Escalabilidad de la instalación: 
+            Se pueden añadir o suprimir clientes sin que el funcionamiento de la red se vea afectado.</p>
+
+        <h3 class="title">Desventajas</h3>
+        <p class="description"> Actualizaciones (Clientes): Una de las complicaciones son las actualizaciones, puede haber muchos terminales con cl cliente instalado y tenemos que asegurar que todas sean actualizadas cuando salga una nueva versión.</p>
+        <p class="description"> Concurrencia: La cantidad de usuarios concurrentes, puede ser un problema para el servidor, quien tendrá que atender todas las peticiones de forma simultánea, aunque se puede mitigar con una estrategia de escalamiento.</p>
+        <p class="description">Protocolos de bajos nivel: Los protocolos más utilizados para establecer comunicion suelen ser de bajo nivel, como Dockers, HTTP, RPC.</p>
+        <p class="description">Depuración: Es difícil analizar un error, pues los clientes están distribuidos en diferentes máquinas, incluso, equipos a los cuales no tenemos acceso, lo que hace complicado recopilar la traza del error.
+        </p>
+    </section>
+
+
+    <section class = "content examples">
+
+        <h2 class = "title">Ejemplos</h2>
+        
+        <p class = "description">Navegar una web funciona basándonos en un cliente web (navegador) y un servidor web como Apache, Nginx o LiteSpeed
+            -Juegos en red: Existen clientes que permiten a jugadores online jugar desde sus casas conectándose a servidores de juegos remotos.
+        </p>
+        <p class = "description">Servidor de correo: Donde clientes de correo consultan el correo al servidor de correo remoto, tanto desde móvil o una computadora de escritorio o laptop.</p>
+        
+        <figure>
+            <img src="img/Ejemplo.jpg" alt="Ejemplos" height="300px width= 100%"> 
+        </figure>
+
+    </section>
+
+        <section class = "content conclusion">
+
+            <h2 class = "title">Conclusion</h2>
+            <p class = "description">Aunque este estilo cliente-servidir no es muy popular entre los nuevos desarrolladores, la realidad es que sigue siendo parte fundamental en muchas de las arquitecturas de hoy en día, solo basta con conocer que el Internet está badsdo en esta arquitectura.
+                A pesar de que puede que no debas implementarla pronto, si que es importante entender cómo funciona, pues muchas herramientas que utilizamos en la actualidad implementan este estilo arquitectónico y no nos damos cuenta de esto, como podrían ser la base de datos, internet, sistemas de mensajería, correo electrónico, programas de conferencia o videollamada como Skype.
+                En realidad es que este estilo es la base de muchas aplicaciones web y navegadores  es importante conocer su importancia y como implementarla en cualquier momento.
+            </p>
+         
+        
+        </section>
+
+
+</body>
+</html>
